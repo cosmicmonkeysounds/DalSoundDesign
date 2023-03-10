@@ -24,7 +24,7 @@ public class CharacterAudio : MonoBehaviour
 
     [Header ("Variation Parameters")]
 
-    [SerializeField, MinMaxSlider (-1200, 1200), Tooltip ("Min/Max values represent the offset variation in pitch in *cents* - 0 would mean no offset, 100 would mean 1 semitone up, 1200 means an octave")] 
+    [SerializeField, Tooltip ("Min/Max values represent the offset variation in pitch as a multiplicative number: 0.5 means an octave down, 2 means an octave up.")] 
     private Vector2 footstepPitchVariationRange = new Vector2 (0.0f, 0.0f);
 
 
@@ -43,9 +43,12 @@ public class CharacterAudio : MonoBehaviour
         if (stepsTimer >= stepsTimeGap)
         {
             var steps = groundType == GroundType.Hard ? hardSteps : softSteps;
+
+            if (steps.Length == 0) return;
+
             int index = Random.Range(0, steps.Length);
 
-            footstepsAudioSource.pitch = Random.Range (footstepPitchVariationRange.x, footstepPitchVariationRange.y).Remap (-1200.0f, 1200.0f, 0.5f, 2.0f);
+            footstepsAudioSource.pitch = Random.Range (footstepPitchVariationRange.x, footstepPitchVariationRange.y);//.Remap (-1200.0f, 1200.0f, 0.5f, 2.0f);
             footstepsAudioSource.PlayOneShot(steps[index]);
 
             stepsTimer = 0;
@@ -56,6 +59,8 @@ public class CharacterAudio : MonoBehaviour
     {
         AudioClip[] footstepContainer = groundType == GroundType.Hard ? hardFootJumps : softFootJumps;
 
+        if (footstepContainer.Length == 0) return;
+
         jumpingAudioSource.PlayOneShot (footstepContainer [Random.Range (0, footstepContainer.Length)]);
 
         characterVoiceSource.PlayOneShot (jumpVoiceEmotes [Random.Range (0, jumpVoiceEmotes.Length)]);
@@ -64,6 +69,8 @@ public class CharacterAudio : MonoBehaviour
     public void PlayLanding(GroundType groundType)
     {
         AudioClip[] footstepContainer = groundType == GroundType.Hard ? hardFootLandings : softFootLandings;
+
+        if (footstepContainer.Length == 0) return;
 
         jumpingAudioSource.PlayOneShot (footstepContainer [Random.Range (0, footstepContainer.Length)]);
 
