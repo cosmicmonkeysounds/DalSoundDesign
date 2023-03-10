@@ -578,14 +578,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 78950764, guid: 9bd03ab8f38a3cf4a8cf7e42d9718f1e, type: 3}
-      propertyPath: footstepPitchVariationRange.x
-      value: 0.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 78950764, guid: 9bd03ab8f38a3cf4a8cf7e42d9718f1e, type: 3}
-      propertyPath: footstepPitchVariationRange.y
-      value: 1.29
-      objectReference: {fileID: 0}
     - target: {fileID: 8431836016390883624, guid: 9bd03ab8f38a3cf4a8cf7e42d9718f1e,
         type: 3}
       propertyPath: m_RootOrder

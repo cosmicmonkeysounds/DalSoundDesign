@@ -5,7 +5,6 @@ public class CharacterAudio : MonoBehaviour
 {
     [Header ("Audio Sources")]
     [SerializeField] AudioSource footstepsAudioSource = null;
-    [SerializeField] AudioSource jumpingAudioSource = null;
     [SerializeField] AudioSource characterVoiceSource = null;
 
 
@@ -61,7 +60,7 @@ public class CharacterAudio : MonoBehaviour
 
         if (footstepContainer.Length == 0) return;
 
-        jumpingAudioSource.PlayOneShot (footstepContainer [Random.Range (0, footstepContainer.Length)]);
+        footstepsAudioSource.PlayOneShot (footstepContainer [Random.Range (0, footstepContainer.Length)]);
 
         characterVoiceSource.PlayOneShot (jumpVoiceEmotes [Random.Range (0, jumpVoiceEmotes.Length)]);
     }
@@ -72,7 +71,7 @@ public class CharacterAudio : MonoBehaviour
 
         if (footstepContainer.Length == 0) return;
 
-        jumpingAudioSource.PlayOneShot (footstepContainer [Random.Range (0, footstepContainer.Length)]);
+        footstepsAudioSource.PlayOneShot (footstepContainer [Random.Range (0, footstepContainer.Length)]);
 
         characterVoiceSource.PlayOneShot (landingVoiceEmotes [Random.Range (0, landingVoiceEmotes.Length)]);
     }
