@@ -11,3 +11,18 @@ Do not save the empty scene the opens by default, but no stress if you do!
 
 ![image](https://user-images.githubusercontent.com/43118271/225792241-d9eabc14-389a-450a-8669-800850a2925a.png)
 
+## Importing assets in Unity:
+All you need to do to is drag files from Finder/Explorer into any folder in your Unity assets folder. 
+
+When you are trying to reimport a file - lets say you just redid a bunch of footsteps, in is actually best to use your computers file system to replace the files (overwrite them). To do this, right click on the folder you are using in Unity, and find the "Open in Finder/Explorer" option. Then drag your freshly reexported assets into this folder, overwriting the files that were there in the Unity project. This is done so that the game objects in your scene do not lose reference to files. 
+
+![image](https://user-images.githubusercontent.com/43118271/225820991-94307e4a-a11b-4e57-b23b-a27516f9206a.png)
+
+
+## Your Project For Part 2:
+
+Under the Hierarchy (left panel where all the game objects for the scene are located), unravel the "Audio" game object, and populate the Daytime and Nighttime and Ruins music and ambience tracks! Divide the work up amonst yourselves; one person for each game object. Mess around with some Logic Pro synth presets to create some ambience - have fun with it!
+
+
+![image](https://user-images.githubusercontent.com/43118271/225820581-48e9c7e8-65c1-499d-aa11-6bb7c3bfa06d.png)
+
