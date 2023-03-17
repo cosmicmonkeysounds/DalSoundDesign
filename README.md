@@ -1,3 +1,7 @@
+## Asset list:
+
+https://docs.google.com/spreadsheets/d/1Gv2MUVycraq1rnsDV3IpJ7DD6yq9nD1p2kfARuE92Mg/edit?usp=sharing
+
 ## Opening the project
 Download the zip file from "code" dropdown menu on this page.
 ![image](https://user-images.githubusercontent.com/43118271/225791921-61cc7f8a-a1a0-4c81-987c-566052f38299.png)
