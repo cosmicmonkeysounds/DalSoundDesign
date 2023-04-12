@@ -1,3 +1,8 @@
+## Lecture slides:
+#1: https://docs.google.com/presentation/d/1FIXjjmDUGAgiIR62xSHudHXFZQvQpF3khQKnaBLX5j8/edit?usp=sharing
+#2: https://docs.google.com/presentation/d/15TdPovWHGlSE-6mXWOAfRUEyNBKTMeO59uSqWJOD5ss/edit?usp=sharing
+
+
 ## Asset list:
 
 https://docs.google.com/spreadsheets/d/1Gv2MUVycraq1rnsDV3IpJ7DD6yq9nD1p2kfARuE92Mg/edit?usp=sharing
