@@ -1,5 +1,5 @@
 ## Lecture slides:
-#1: https://docs.google.com/presentation/d/1FIXjjmDUGAgiIR62xSHudHXFZQvQpF3khQKnaBLX5j8/edit?usp=sharing
+#1: https://docs.google.com/presentation/d/1FIXjjmDUGAgiIR62xSHudHXFZQvQpF3khQKnaBLX5j8/edit?usp=sharing <br />
 #2: https://docs.google.com/presentation/d/15TdPovWHGlSE-6mXWOAfRUEyNBKTMeO59uSqWJOD5ss/edit?usp=sharing
 
 
